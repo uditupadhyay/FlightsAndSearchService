@@ -4,7 +4,10 @@ const { Op } =require('sequelize');
 class CityRepository{
     async createCity({name}){
         try{
-            const city=await City.create({name});
+            const city=await City.create({
+                // name:name;
+                name
+            });
             return city;
         } catch(error){
             console.log("something is wrong in repo layer");
@@ -12,7 +15,7 @@ class CityRepository{
         }
     }
 
-    async deleteCity(cityId){
+    async deleteCity(cityId){ 
         try {
             await City.destroy({
                 where :{
@@ -27,6 +30,7 @@ class CityRepository{
     
     async updateCity(cityId,data){
         try {
+            // the below approach will also work but it doesnot return the object so we cant see in postman response
             // const city=await City.update(data,{
             //     where:{
             //         id:cityId
