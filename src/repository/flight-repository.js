@@ -3,7 +3,7 @@ const {Op}=require('sequelize');
 
 class FlightRepository{
 
-    #createFilter(data){
+     #createFilter(data){
         let filter={};
         if(data.arrivalAirportId){
             filter.arrivalAirportId=data.arrivalAirportId;
