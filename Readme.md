@@ -97,7 +97,7 @@ _All the APIs are CRUD based._
 ### City APIs
 
 - **For Creating a City:**  
-URL = <http://localhost:3003/api/v1/city>  
+URL = <http://localhost:3000/api/v1/city>  
 Request Format (post, sent in body) (json):
 
 ```json
@@ -107,7 +107,7 @@ Request Format (post, sent in body) (json):
 ```
 
 - **For Creating a Cities:**  
-URL = <http://localhost:3003/api/v1/cities>  
+URL = <http://localhost:3000/api/v1/cities>  
 Request Format (post, sent in body) (json):
 
 ```json
@@ -120,15 +120,15 @@ Request Format (post, sent in body) (json):
 ```
 
 - **To fetch a City:**  
-URL = <http://localhost:3003/api/v1/city/:id>  
+URL = <http://localhost:3000/api/v1/city/:id>  
 Request format (get, sent in request params)
 
 - **To fetch all Cities:**  
-URL = <http://localhost:3003/api/v1/city>  
+URL = <http://localhost:3000/api/v1/city>  
 Request format (get)
 
 - **To update a City:**  
-URL = <http://localhost:3003/api/v1/city>  
+URL = <http://localhost:3000/api/v1/city>  
 Request format (patch, sent in body) (json):
 
 ```json
